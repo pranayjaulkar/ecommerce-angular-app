@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as streamingAvailability from 'streaming-availability';
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -16,5 +16,12 @@ export class ApiService {
 
   getShow(id: string) {
     return this.streamingAvailability.showsApi.getShow({ id });
+  }
+
+  getShows(): Promise<streamingAvailability.SearchResult> {
+    return this.streamingAvailability.showsApi.searchShowsByFilters({
+      country: 'in',
+      catalogs: ['netflix'],
+    });
   }
 }

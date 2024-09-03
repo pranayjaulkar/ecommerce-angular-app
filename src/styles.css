@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgb(30, 41, 59);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

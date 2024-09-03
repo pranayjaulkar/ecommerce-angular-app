@@ -1,0 +1,12 @@
+<li class="flex flex-col items-center hover:cursor-pointer">
+  <div class="w-full min-w-24 sm:max-w-52 px-6">
+    <a href="/show" class="mx-auto flex justify-center">
+      <img
+        [src]="show.imageSet.verticalPoster.w240"
+        class="h-full border-white hover:border-green-400 transition-all duration-200 border-4 rounded"
+        alt=""
+      />
+    </a>
+    <h3 class="break-words break-all text-white mt-4">{{ show.title }}</h3>
+  </div>
+</li>
