@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ShowPageComponent } from './show-page/show-page.component';
+import { HomePage } from './home/home.component';
+import { ShowPage } from './show/show.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomePage,
   },
-  { path: 'show', component: ShowPageComponent },
+  { path: 'show/:id', component: ShowPage },
 ];
