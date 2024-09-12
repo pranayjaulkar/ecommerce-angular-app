@@ -23,4 +23,8 @@ export class ShowPage implements OnInit {
       this.showSkeleton = false;
     });
   }
+
+  getGenres() {
+    return this.show.genres.map(gn=>gn.name).join(" / ")
+  }
 }
