@@ -16,6 +16,6 @@ export class HomePage {
   constructor(private apiService: ApiService) {
     apiService
       .getShows()
-      .then((shows: SearchResult) => (this.shows = shows.shows));
+      .then((data: SearchResult) => (this.shows = data.shows));
   }
 }
